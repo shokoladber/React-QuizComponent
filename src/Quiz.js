@@ -12,9 +12,8 @@ class Quiz extends Component {
     };
 
     render(){
-        console.log(quizData.quiz_questions[0].instruction_text);
         return(
-                <QuizQuestion/>
+                <QuizQuestion quiz_question={quizData.quiz_questions}/>
         );
     };
 };
