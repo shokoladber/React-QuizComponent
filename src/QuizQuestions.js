@@ -7,7 +7,6 @@ class QuizQuestion extends Component {
     };
 
     render() {
-        console.log(this.props.quiz_question.answer_options);
         return(
             <main>
                 <section>
@@ -15,7 +14,7 @@ class QuizQuestion extends Component {
                 </section>
                 <section className="buttons">
                     <ul>
-                        <li>{this.props.quiz_question.answer_options}</li>
+                        <li>{this.props.quiz_question.answer_options[0]}</li>
                     </ul>
                 </section>
             </main>

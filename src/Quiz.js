@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import QuizQuestion from './QuizQuestions.js'
 
-let quizData = require('./quiz_data.json');
+const quizData = require('./quiz_data.json');
 
 class Quiz extends Component {
 
@@ -13,7 +13,7 @@ class Quiz extends Component {
 
     render(){
         return(
-                <QuizQuestion quiz_question={quizData.quiz_questions}/>
+                <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position-1]} />
         );
     };
 };
